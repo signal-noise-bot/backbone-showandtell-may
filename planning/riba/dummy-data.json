@@ -1,0 +1,36 @@
+[
+	{
+		"slug": "size-of-practice",
+	    "title": "Size of Practice",
+		"sections" : [
+			{
+			    "slug": "revenue",
+			    "title": "Revenue",
+			    "graph-type": "curved-line",
+	        	"data-type": "integers",
+	 			"controls": [
+					{
+						"name": "exportpicker",
+						"type": "selector"
+					}
+				],
+				"markers": [
+					{
+						"axis": "x",
+						"title": "Your practice",
+						"color": "#fd9a13",
+						"percent": "35"
+					},
+					{
+						"axis": "x",
+						"title": "Average",
+						"color": "#00b6dd",
+						"percent": "40"
+					}
+				],
+				"values": [
+				]
+			}
+		]
+	}
+]
