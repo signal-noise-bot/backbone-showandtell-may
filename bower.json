@@ -1,0 +1,19 @@
+{
+  "name": "backbone-showandtell-may",
+  "version": "0.0.0",
+  "homepage": "https://github.com/signal-noise/backbone-showandtell-may",
+  "authors": [
+    "Chris Brown <chris@chrisbrown.io>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.0"
+  }
+}
