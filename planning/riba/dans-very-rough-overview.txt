@@ -1,0 +1,46 @@
+To do...
+
+- Create nice version of data
+- Show Box model of views
+- show screenshot, json and code snippet for all the below
+
+- Router
+
+if (updateRouter){
+    this.navigate(page + "/" + section);
+}
+
+this.newPage = {
+	view: new Content({
+		page: page,
+		// section: section,
+		model: pageModel,
+	})
+};
+
+- Navigation 
+	- Anthonys text
+	- !! Why we use data-navigate ??
+
+- Content
+	- render sections
+
+ _.each(this.sectionsDataAll, function(data) {
+    var slug = data.slug;
+
+    var section = new Section({
+      all: data,
+      page: this.page
+    });
+
+    this.$sections.append(section.el);
+
+    this.sections[slug] = section;
+
+    section.render();
+}, this);
+
+this.sections[Globals.Router.section].transitionGraphs(Globals.Router.section);
+
+- Graph
+ - stuff!
