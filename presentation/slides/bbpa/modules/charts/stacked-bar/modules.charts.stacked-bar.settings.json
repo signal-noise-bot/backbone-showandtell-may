@@ -1,0 +1,13 @@
+{
+  "styles": [
+    "default"
+  ],
+  "entities": {
+    "segments": {
+      "values": {
+        "percentage": { "type": "text", "placeholder": 0, "name": "Value" },
+        "color": { "type": "text", "placeholder": "#FFF", "name": "Color" }
+      }
+    }
+  }
+}

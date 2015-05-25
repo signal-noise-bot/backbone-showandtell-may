@@ -1,7 +1,7 @@
 # Intro - DATA DRIVEN VISUALISATIONS
 	## What is BBPA?
-	- Essentially created single page website for BBPA
-	- Fully responsive down to mobile
+	- Single page website for BBPA
+	- Fully responsive down to mobile	
 
 # How it works
 	## Demo Overview

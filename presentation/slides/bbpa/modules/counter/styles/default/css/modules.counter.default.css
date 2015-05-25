@@ -1,0 +1,13 @@
+.counter {
+  overflow: hidden;
+  height: 50px;
+  font-size: 50px;
+  line-height: 50px;
+  display: inline-block; }
+  .counter .digit {
+    position: relative;
+    float: left;
+    text-align: center; }
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1vZHVsZXMuY291bnRlci5kZWZhdWx0LnNhc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxVQUFVO0VBRVYsUUFBUTtFQUNSLFdBQVc7RUFDWCxhQUFhO0VBQ2IsU0FBUztFQUFYLFNBQVM7SUFHTCxVQUFVO0lBQ1YsT0FBTztJQUNQLFlBQVkiLCJmaWxlIjoiLi4vZnJvbnRlbmQvbW9kdWxlcy9jb3VudGVyL3N0eWxlcy9kZWZhdWx0L3Nhc3MvbW9kdWxlcy5jb3VudGVyLmRlZmF1bHQuY3NzIiwic291cmNlc0NvbnRlbnQiOltudWxsXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0= */
