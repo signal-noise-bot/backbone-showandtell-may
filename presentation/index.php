@@ -34,10 +34,16 @@
 	<section class="slide riba-router-title"><div><?php include('slides/riba/riba-router-title.html'); ?></div></section>
 	<section class="slide riba-router-code"><div><?php include('slides/riba/riba-router-code.html'); ?></div></section>
 
+	<section class="slide riba-navigation-title"><div><?php include('slides/riba/riba-navigation-title.html'); ?></div></section>
+	<section class="slide riba-data-all"><div><?php include('slides/riba/riba-data-all.html'); ?></div></section>
+	<section class="slide riba-navigation-code"><div><?php include('slides/riba/riba-navigation-code.html'); ?></div></section>
+
+	<section class="slide riba-controls-title"><div><?php include('slides/riba/riba-controls-title.html'); ?></div></section>
+
 	<div class="progress"><div></div></div>
 
 	<script src="shower/shower.min.js"></script>
-  <script data-main="init" src="lib/requirejs/require.js"></script>
+  	<script data-main="init" src="lib/requirejs/require.js"></script>
 
 	<script src="highlight/highlight.pack.js"></script> -->
 	
