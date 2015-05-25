@@ -12,6 +12,7 @@
 	## Structure of views
 	- Explain what data driven actually means - JSON that drives the nav, router, all content and also the filters / controls
 	- Diagram / flow chart thing
+	- Show sample of data
 	
 	## Router
 	- Show routes regex

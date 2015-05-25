@@ -12,9 +12,18 @@
 <body class="list">
 
 	<section class="slide"><div><?php include('slides/intro/intro-0.html'); ?></div></section>
+
 	<section class="slide bbpa-intro"><div><?php include('slides/bbpa/bbpa-intro.html'); ?></div></section>
 	<section class="slide bbpa-sidebar"><div><?php include('slides/bbpa/bbpa-sidebar.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars"><div><?php include('slides/bbpa/bbpa-stacked-bars.html'); ?></div></section>
+
+
+	<section class="slide riba-intro"><div><?php include('slides/riba/riba-intro.html'); ?></div></section>
+	<section class="slide riba-views-diagram"><div><?php include('slides/riba/riba-views-diagram.html'); ?></div></section>
+	<section class="slide riba-data-all"><div><?php include('slides/riba/riba-data-all.html'); ?></div></section>
+
+	<section class="slide riba-data-all"><div><?php include('slides/riba/riba-router-title.html'); ?></div></section>
+	<section class="slide riba-data-all"><div><?php include('slides/riba/riba-router-code.html'); ?></div></section>
 
 	<div class="progress"><div></div></div>
 
