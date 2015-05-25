@@ -57,7 +57,7 @@
 
 	<section class="slide"><div><?php include('slides/intro/intro-0.html'); ?></div></section>
 
-	<section class="slide bbpa-intro"><div><?php include('slides/bbpa/bbpa-intro.html'); ?></div></section>
+	<section class="slide bbpa-intro"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-intro.html'); ?></div></section>
 	<section class="slide bbpa-modularity"><div><?php include('slides/bbpa/bbpa-modularity.html'); ?></div></section>
 	<section class="slide bbpa-data-format"><div><?php include('slides/bbpa/bbpa-data-format.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-markup"><div><?php include('slides/bbpa/bbpa-stacked-bars-markup.html'); ?></div></section>
