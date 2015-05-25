@@ -1,0 +1,25 @@
+video {
+	// transform: scale(1.13);
+}
+
+.logo {
+	width: 150px;
+}
+
+.credits {
+	position: absolute;
+	bottom: -50px;
+
+	li {
+		text-indent: 0 !important;
+
+		&:before {
+			display: none !important;
+		}
+	}
+
+	.name {
+		width: 180px;
+		display: inline-block;
+	}
+}

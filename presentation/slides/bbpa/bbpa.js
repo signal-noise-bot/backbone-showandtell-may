@@ -53,7 +53,8 @@ define([
     html = html.replace("[", "");
     html = html.replace("]", "");
 
-    $('.bbpa-stacked-bars-example .data').html(html)
+    $('.bbpa-stacked-bars-example .data').html(html);
+    hljs.initHighlighting();
 
   });
 
@@ -61,7 +62,7 @@ define([
   $('.bbpa-stacked-bars-customisability').click(function(){
 
     small.update(generateData(2, ["#1FB4BD", "#00A6A0"]));
-    big.update(generateData(10, ["#1FB4BD","#1CB0B8","#19ABB3","#17A7AE","#14A2A9","#119EA4","#0E999F","#0B959A","#089095","#068C90","#03878B","#008386"]));
+    big.update(generateData(10, ["#1FB4BD","#1DABB3","#1CA2AA","#1A99A0","#189096","#16878C","#157D83","#137479","#116B6F","#0F6265","#0E595C","#0C5052"]));
     colors.update(generateData(5, ["#AF4080", "#199AC6", "#C3C753", "#DEA354", "#DE9364"]));
 
   });
