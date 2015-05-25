@@ -5,8 +5,8 @@ html, body{
 }
 
 .slide{
-  display: none;
-  margin: 0 !important; 
+  // display: none;
+  // margin: 0 !important; 
   background: #131313;
   &:after{
     content: none;
@@ -14,18 +14,18 @@ html, body{
 }
 
 .slide.active{
-  display: block;
+  // display: block;
 }
 
-.slide > div{
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 30px;
-}
+// .slide > div{
+//   margin: 0;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   padding: 30px;
+// }
 
 .vertical-align-parent {
   white-space: nowrap;
