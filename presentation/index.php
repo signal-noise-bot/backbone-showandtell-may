@@ -59,6 +59,11 @@
 
 	<section class="slide bbpa-intro"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-intro.html'); ?></div></section>
 	<section class="slide bbpa-modularity"><div><?php include('slides/bbpa/bbpa-modularity.html'); ?></div></section>
+	<section class="slide bbpa-modularity-0"><div><?php include('slides/bbpa/bbpa-modularity-0.html'); ?></div></section>
+	<section class="slide bbpa-modularity-1"><div><?php include('slides/bbpa/bbpa-modularity-1.html'); ?></div></section>
+	<section class="slide bbpa-modularity-2"><div><?php include('slides/bbpa/bbpa-modularity-2.html'); ?></div></section>
+	<section class="slide bbpa-modularity-3"><div><?php include('slides/bbpa/bbpa-modularity-3.html'); ?></div></section>
+	<section class="slide bbpa-modularity-4"><div><?php include('slides/bbpa/bbpa-modularity-4.html'); ?></div></section>
 	<section class="slide bbpa-data-format"><div><?php include('slides/bbpa/bbpa-data-format.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-markup"><div><?php include('slides/bbpa/bbpa-stacked-bars-markup.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-example"><div><?php include('slides/bbpa/bbpa-stacked-bars-example.html'); ?></div></section>
