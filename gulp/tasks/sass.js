@@ -4,7 +4,7 @@ var prefix = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', function() {
-  gulp.src('./presentation/{,**/*}*.{scss,sass}')
+  gulp.src('./presentation/slides/all.scss')
 	.pipe(sourcemaps.init())
 	.pipe(sass({
 	 	errLogToConsole: true,
