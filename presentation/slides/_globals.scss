@@ -20,6 +20,8 @@ body.full{
   }
 
   .slide > div{
+  	width: auto;
+  	height: auto;
     margin: 0;
     position: absolute;
     left: 50px;
@@ -30,7 +32,15 @@ body.full{
     width: auto !important;
     // padding: 30px;
   }
+
+  .slide > pre {
+
+  }
   
+}
+
+code {
+  font-family: 'Inconsolata';
 }
 
 xmp{
@@ -40,6 +50,10 @@ xmp{
 .vertical-align-parent {
   white-space: nowrap;
   text-align: center;
+
+  h2 {
+  	display: inline-block;
+  }
 }
  
 .vertical-align-parent:before {

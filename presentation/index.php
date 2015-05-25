@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="shower/themes/dark/styles/screen.css">
 	<link rel="stylesheet" href="highlight/styles/monokai_sublime.css">
 	<link rel="stylesheet" href="css/all.css">
@@ -78,7 +79,7 @@
 	<section class="slide bbpa-helper-example"><div><?php include('slides/bbpa/bbpa-helper-example.html'); ?></div></section>
 
 
-	<section class="slide riba-intro"><div><?php include('slides/riba/riba-intro.html'); ?></div></section>
+	<section class="slide riba-intro"><div class="vertical-align-parent"><?php include('slides/riba/riba-intro.html'); ?></div></section>
 	<section class="slide riba-views-diagram"><div><?php include('slides/riba/riba-views-diagram.html'); ?></div></section>
 	<section class="slide riba-data-all"><div><?php include('slides/riba/riba-data-all.html'); ?></div></section>
 
