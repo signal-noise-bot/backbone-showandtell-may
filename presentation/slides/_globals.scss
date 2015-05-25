@@ -20,6 +20,8 @@ body.full{
   }
 
   .slide > div{
+  	width: auto;
+  	height: auto;
     margin: 0;
     position: absolute;
     left: 50px;
@@ -29,12 +31,20 @@ body.full{
     padding: 0;
     // padding: 30px;
   }
+
+  .slide > pre {
+
+  }
   
 }
 
 .vertical-align-parent {
   white-space: nowrap;
   text-align: center;
+
+  h2 {
+  	display: inline-block;
+  }
 }
  
 .vertical-align-parent:before {
@@ -54,3 +64,4 @@ body.full{
 .progress div{
   background: #00daa5 !important;
 }
+
