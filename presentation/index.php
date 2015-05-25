@@ -83,6 +83,8 @@
 	<section class="slide riba-navigation-code"><div><?php include('slides/riba/riba-navigation-code.html'); ?></div></section>
 
 	<section class="slide riba-controls-title"><div><?php include('slides/riba/riba-controls-title.html'); ?></div></section>
+	<section class="slide riba-controls-data"><div><?php include('slides/riba/riba-controls-data.html'); ?></div></section>
+	<section class="slide riba-controls-data"><div><?php include('slides/riba/riba-controls-code.html'); ?></div></section>
 
 	<div class="progress"><div></div></div>
 
