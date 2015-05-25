@@ -12,6 +12,13 @@ require.config({
 		// "models": "models",
 		// "data": "../data",
 		// "modules": "../../modules",
+	},
+	shim: {
+		"underscore": { exports: "_" },
+		"jquery": { exports: "$" },
+		"backbone": { exports: "Backbone", deps: ["underscore", "jquery"] },
+		"velocity": { deps: ["jquery"] },
+		"velocity-ui": { deps: ["velocity"] },
 	}
 });
 
@@ -26,6 +33,6 @@ requirejs([
   'slides/bbpa/bbpa'
 ], function($, _, Backbone){
 
-	
+
 
 });
