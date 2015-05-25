@@ -81,11 +81,7 @@ a, select, button, input, textarea {
   box-sizing: border-box; }
 
 html, body, #app, #content {
-  height: 100%;
   width: 100%; }
-
-body {
-  overflow: hidden; }
 
 #content {
   overflow: scroll; }

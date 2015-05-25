@@ -129,7 +129,6 @@ a {
     background: black;
     /*background: white;*/
     color: white;
-    outline: 1px solid red;
     -webkit-print-color-adjust: exact;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
