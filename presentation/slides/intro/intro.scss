@@ -2,9 +2,13 @@ video {
 	// transform: scale(1.13);
 }
 
+.logo {
+	width: 170px;
+}
+
 .credits {
 	position: absolute;
-	bottom: 35px;
+	bottom: -50px;
 
 	li {
 		text-indent: 0 !important;
