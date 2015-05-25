@@ -24,3 +24,23 @@ html, body{
   height: 100%;
   padding: 30px;
 }
+
+
+.vertical-align-parent {
+  white-space: nowrap;
+  text-align: center;
+}
+ 
+.vertical-align-parent:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+.vertical-align {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+}

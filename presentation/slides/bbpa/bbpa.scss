@@ -1,7 +1,26 @@
-.bbpa-stacked-bars{
+.bbpa-stacked-bars-example{
+  
+  .stacked-bar{
+    margin-top: 150px;
+    height: 28px !important;
+  }
+
+  .data{
+    width: 600px;
+    margin: 50px auto 0;
+  }
+
+}
+
+.bbpa-stacked-bars-customisability{
   
   .stacked-bar{
     height: 28px !important;
+    width: 100%;
+  }
+
+  .module-small, .module-big, .module-colors{
+    height: 33%;
   }
 
 }

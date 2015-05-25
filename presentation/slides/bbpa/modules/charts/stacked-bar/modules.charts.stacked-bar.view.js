@@ -5,7 +5,7 @@ define([
 
   return Master.extend({
 
-    className: "stacked-bar empty",
+    className: "stacked-bar vertical-align",
 
     templates: {
       "main": template
@@ -49,7 +49,8 @@ define([
         $span.velocity("transition.fadeOut", {
           duration: this.options.duration/2,
           complete: function(){
-            $span.html(segment.percentage >= 10 ? segment.percentage + "%" : "");
+            $span.html(segment.percentage >= 5 ? segment.percentage + "%" : "");
+            // $span.html(segment.percentage + "%");
             $span.velocity("transition.fadeIn", { duration: self.options.duration/2 });
           }
         });
