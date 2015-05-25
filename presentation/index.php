@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="shower/themes/dark/styles/screen.css">
-	<link rel="stylesheet" href="highlight/styles/default.css">
+	<link rel="stylesheet" href="highlight/styles/monokai_sublime.css">
 	<link rel="stylesheet" href="css/all.css">
 </head>
 <body class="list">
@@ -84,12 +84,21 @@
 
 	<section class="slide riba-controls-title"><div><?php include('slides/riba/riba-controls-title.html'); ?></div></section>
 
-	<div class="progress"><div></div></div>
+	<!-- <div class="progress"><div></div></div> -->
 
 	<script src="shower/shower.min.js"></script>
   	<script data-main="init" src="lib/requirejs/require.js"></script>
 
-	<script src="highlight/highlight.pack.js"></script> -->
+	<script src="highlight/highlight.pack.js"></script> 
+
+	<script>
+		hljs.configure({
+			// tabReplace: '    ', // 4 spaces
+			// classPrefix: ''     // don't append class prefix
+			// // … other options aren't changed
+		})
+		hljs.initHighlighting();
+	</script>
 	
 </body>
 </html>

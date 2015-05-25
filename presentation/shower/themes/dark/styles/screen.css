@@ -182,11 +182,11 @@ a {
     font-style: italic
 }
 .slide code, .slide kbd, .slide samp {
-    padding: 5px 7px 1px;
-    background: rgba(0, 0, 0, .08);
-    color: #000;
-    line-height: 1;
-    font-family: 'Anka Coder', monospace
+    /*padding: 5px 7px 1px;*/
+    /*background: rgba(0, 0, 0, .08);*/
+    /*color: #000;*/
+    /*line-height: 1;*/
+    /*font-family: 'Anka Coder', monospace*/
 }
 .slide mark {
     padding: 2px 7px;
@@ -263,6 +263,7 @@ a {
     line-height: 2
 }
 .slide pre code:before {
+    /*display: none;*/
     position: absolute;
     margin-left: -50px;
     color: #AAA;
