@@ -38,6 +38,10 @@ body.full{
   
 }
 
+xmp{
+  margin: 0;
+}
+
 .vertical-align-parent {
   white-space: nowrap;
   text-align: center;
@@ -65,3 +69,14 @@ body.full{
   background: #00daa5 !important;
 }
 
+.link:before{
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  margin-left: -24px;
+  background: url(../slides/link.svg);
+  background-size: cover;
+  vertical-align: middle;
+}
