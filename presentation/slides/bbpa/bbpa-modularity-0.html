@@ -1,13 +1,13 @@
-<xmp>//index.js
+<pre><code>//index.js
 
 var module = function(){
-  _.extend(this, Backbone.Events);
-  if(this.initialize) this.initialize.apply(this, arguments);
+      _.extend(this, Backbone.Events);
+      if (this.initialize) this.initialize.apply(this, arguments);
 };
 
 module.extend = Backbone.View.extend;
 
 return module.extend({
-  ...
+      ...
 
-</xmp>
+</code></pre>

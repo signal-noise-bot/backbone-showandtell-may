@@ -34,15 +34,19 @@ define([
   };
 
   // Stacked bar example
+  var intro = new StackedBar();
   var standard = new StackedBar();
   var small = new StackedBar();
   var big = new StackedBar();
   var colors = new StackedBar();
 
+  $('.bbpa-stacked-bars-intro .module').append(intro.el);
   $('.bbpa-stacked-bars-example .module').append(standard.el);
   $('.bbpa-stacked-bars-customisability .module-small').append(small.el);
   $('.bbpa-stacked-bars-customisability .module-big').append(big.el);
   $('.bbpa-stacked-bars-customisability .module-colors').append(colors.el);
+
+  intro.update(generateData(3, ["#1FB4BD", "#00A6A0", "#008386"]));
 
   $('.bbpa-stacked-bars-example').click(function(){
 
