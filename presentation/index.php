@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<link rel="stylesheet" href="highlight/styles/default.css">
 	<link rel="stylesheet" href="shower/themes/dark/styles/screen.css">
+	<link rel="stylesheet" href="highlight/styles/default.css">
 	<link rel="stylesheet" href="css/all.css">
 </head>
 <body class="list">

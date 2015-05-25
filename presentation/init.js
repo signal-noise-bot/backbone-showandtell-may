@@ -23,11 +23,7 @@ requirejs([
   'backbone-super',
   'velocity',
   'velocity-ui',
+  'slides/bbpa/bbpa'
 ], function($, _, Backbone){
-
-  	
-  	require(['slides/bbpa/bbpa'], function(){
-  		console.log("Loaded BBPA");
-  	});
 
 });
