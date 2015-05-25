@@ -1,0 +1,67 @@
+<h1>The Router</h1>
+<pre>
+<code>define([</code>
+  <code>'globals',</code>
+  <code>'routers/routers.master',</code>
+  <code>'views/views.content',</code>
+  <code>'views/views.print',</code>
+  <code>'views/views.report',</code>
+<code>], function(Globals, Master, Content, Print, Report){</code>
+<code></code>
+  <code>return Master.extend({</code>
+<code></code>
+    <code>routes: {</code>
+      <code>'report' : "report",</code>
+      <code>'print(/:page)(/:section)' : "print",</code>
+      <code>':page(/:section)' : "main",</code>
+      <code>'*actions' : "default"</code>
+    <code>},</code>
+<code></code>
+    <code>default: function(){...</code>
+    <code>},</code>
+<code></code>
+    <code>print: function(page, section){...</code>
+    <code>},</code>
+<code></code>
+    <code>report: function(){...</code>
+    <code>},</code>
+<code></code>
+    <code>main: function(page, section){</code>
+      <code>if (page == this.previousPage) return; // Stop page from rendering </code>twice
+      <code>this.previousPage = page;</code>
+<code></code>
+      <code>var pageModel = Globals.Questions.All.findWhere({"slug": page});</code>
+      <code>var sectionData;</code>
+      <code>var updateRouter;</code>
+<code></code>
+      <code>this.page = page;</code>
+      <code>this.section = section;</code>
+<code>      </code>
+      <code>if (!page || !pageModel){</code>
+<code>        page = Globals.Questions.All.at(0).get("slug"); // if no page route, </code>get first
+        <code>updateRouter = true;</code>
+      <code>}</code>
+<code>      </code>
+      <code>if (!section){</code>
+<code>        section = pageModel.get("sections")[0].slug; // if no section route, </code>get first
+        <code>updateRouter = true;</code>
+      <code>}</code>
+<code>            </code>
+      <code>if (updateRouter){</code>
+        <code>this.navigate(page + "/" + section);</code>
+      <code>}</code>
+<code></code>
+      <code>this.newPage = {</code>
+        <code>view: new Content({</code>
+          <code>page: page,</code>
+          <code>model: pageModel,</code>
+        <code>})</code>
+      <code>};</code>
+<code></code>
+      <code>document.title = 'RIBA — ' + pageModel.get('title');</code>
+    <code>}</code>
+  <code>});</code>
+<code></code>
+<code>});</code>
+
+</pre>

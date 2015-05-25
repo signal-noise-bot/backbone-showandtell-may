@@ -1,0 +1,13 @@
+[
+  ...
+  { 
+    "key": "work-service-slider",
+    "group": "work-service",
+    "type": "slider",
+    "value": 0.5,
+    "format": "percent",
+    "disabled": true,
+    "hidden": false
+  },
+  ...
+]
