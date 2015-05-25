@@ -1,0 +1,67 @@
+<h1>The Content (views.content.js)</h1>
+
+<pre>
+	<code>define([</code>
+	<code>'globals',</code>
+	<code>'views/views.master',</code>
+	<code>'views/views.header',</code>
+	<code>'views/views.section',</code>
+	<code>'text!templates/content.html'</code>
+	<code>], function(Globals, Master, Header, Section, template) {</code>
+	<code></code>
+	<code>return Master.extend({</code>
+	<code></code>
+	<code>isAnimating: false,</code>
+	<code></code>
+	<code>templates: {...</code>
+	<code>},</code>
+	<code></code>
+	<code>initialize: function(options) {...</code>
+	<code>},</code>
+	<code></code>
+	<code>addEvents: function() {...</code>
+	<code>},</code>
+	<code></code>
+	<code>render: function() {...</code>
+	<code>},</code>
+	<code></code>
+	<code>renderHeader: function() {...</code>
+	<code>},</code>
+	<code></code>
+	<code>renderSections: function() {</code>
+	<code></code>
+	<code>_.each(this.sectionsData, function(data) {</code>
+	<code></code>
+	<code>var section = new Section({</code>
+	<code>data: data,</code>
+	<code>page: this.page</code>
+	<code>});</code>
+	<code></code>
+	<code>this.$sections.append(section.el);</code>
+	<code></code>
+	<code>section.render();</code>
+	<code>}, this);</code>
+	<code>},</code>
+	<code></code>
+	<code>handleScroll: function(e) {...</code>
+	<code>},</code>
+	<code></code>
+	<code>toggleHeader: function(e) {...</code>
+	<code>},</code>
+	<code></code>
+	<code>scrollRoute: function() {...</code>
+	<code>},</code>
+	<code></code>
+	<code>getOffsets: function() {...</code>
+	<code>},</code>
+	<code></code>
+	<code>scrollTo: function(main, route) {...</code>
+	<code>},</code>
+	<code></code>
+	<code>remove: function() {...</code>
+	<code>}</code>
+	<code></code>
+	<code>});</code>
+	<code></code>
+	<code>});</code>	
+</pre>

@@ -84,7 +84,13 @@
 
 	<section class="slide riba-controls-title"><div><?php include('slides/riba/riba-controls-title.html'); ?></div></section>
 	<section class="slide riba-controls-data"><div><?php include('slides/riba/riba-controls-data.html'); ?></div></section>
-	<section class="slide riba-controls-data"><div><?php include('slides/riba/riba-controls-code.html'); ?></div></section>
+	<section class="slide riba-controls-code"><div><?php include('slides/riba/riba-controls-code.html'); ?></div></section>
+
+	<section class="slide riba-content-title"><div><?php include('slides/riba/riba-content-title.html'); ?></div></section>
+	<section class="slide riba-content-code"><div><?php include('slides/riba/riba-content-code.html'); ?></div></section>
+
+	<section class="slide riba-visuals-title"><div><?php include('slides/riba/riba-visuals-title.html'); ?></div></section>
+	<section class="slide riba-visuals-code"><div><?php include('slides/riba/riba-visuals-code.html'); ?></div></section>
 
 	<div class="progress"><div></div></div>
 
