@@ -222,7 +222,10 @@ a {
 }
 .slide ol, .slide ul {
     margin: 0 0 48px;
-    counter-reset: list
+    counter-reset: list;
+}
+.slide ol:last-child, .slide ul:last-child {
+    margin: 0 0 0;
 }
 .slide ol li, .slide ul li {
     text-indent: -2em
