@@ -1,2 +1,4 @@
-@import "globals";
-@import "bbpa/bbpa";
+// Had to add ./ because of of sass on windows is messed up
+@import "./globals";
+@import "./bbpa/bbpa";
+@import "./intro/intro";

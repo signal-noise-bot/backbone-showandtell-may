@@ -1,0 +1,21 @@
+video {
+	// transform: scale(1.13);
+}
+
+.credits {
+	position: absolute;
+	bottom: 35px;
+
+	li {
+		text-indent: 0 !important;
+
+		&:before {
+			display: none !important;
+		}
+	}
+
+	.name {
+		width: 180px;
+		display: inline-block;
+	}
+}

@@ -10,6 +10,50 @@
 	<link rel="stylesheet" href="css/all.css">
 </head>
 <body class="list">
+	
+	<section class="slide shout"><div><?php include('slides/intro/intro-credits.html'); ?></div></section>
+
+	<section class="slide"><?php include('slides/intro/intro-showreel.html'); ?></section>
+
+	<section class="slide">
+		<div>
+			<h2>Shower Key Features</h2>
+			<ol>
+				<li>Built on HTML, CSS and vanilla JavaScript</li>
+				<li>All modern browsers are supported</li>
+				<li>Slide themes are separated from engine</li>
+				<li>Fully keyboard accessible</li>
+				<li>Printable to PDF</li>
+			</ol>
+			<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+		</div>
+	</section>
+
+
+	<section class="slide">
+		<div>
+			<h2>Serious Citations</h2>
+			<figure>
+				<blockquote>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+				</blockquote>
+				<figcaption>Marcus Tullius Cicero</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<section class="slide cover" id="Picture">
+		<div>
+			<h2>Pictures</h2>
+			<img src="" alt="">
+		</div>
+	</section>
+
+	<section class="slide shout">
+		<div>
+			<h2>You can even shout this way</h2>
+		</div>
+	</section>
 
 	<section class="slide"><div><?php include('slides/intro/intro-0.html'); ?></div></section>
 
@@ -25,6 +69,14 @@
 	<section class="slide bbpa-donut-svg-syntax"><div><?php include('slides/bbpa/bbpa-donut-svg-syntax.html'); ?></div></section>
 	<section class="slide bbpa-helper"><div><?php include('slides/bbpa/bbpa-helper.html'); ?></div></section>
 	<section class="slide bbpa-helper-example"><div><?php include('slides/bbpa/bbpa-helper-example.html'); ?></div></section>
+
+
+	<section class="slide riba-intro"><div><?php include('slides/riba/riba-intro.html'); ?></div></section>
+	<section class="slide riba-views-diagram"><div><?php include('slides/riba/riba-views-diagram.html'); ?></div></section>
+	<section class="slide riba-data-all"><div><?php include('slides/riba/riba-data-all.html'); ?></div></section>
+
+	<section class="slide riba-router-title"><div><?php include('slides/riba/riba-router-title.html'); ?></div></section>
+	<section class="slide riba-router-code"><div><?php include('slides/riba/riba-router-code.html'); ?></div></section>
 
 	<div class="progress"><div></div></div>
 
