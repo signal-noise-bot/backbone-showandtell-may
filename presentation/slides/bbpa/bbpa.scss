@@ -158,4 +158,23 @@
       color: yellow;
     }
   }
+  &.helper-example{
+    font-family: 'Inconsolata';
+    .left{
+      text-align: left;
+    }
+    pre{
+      margin: 0;
+    }
+    .data{
+      margin-left: 20px;
+      white-space: normal;
+    }
+  }
+  &.helper-animate{
+    code{
+      line-height: 1.8;
+    }
+  }
 }
+

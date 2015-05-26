@@ -51,7 +51,9 @@
 	<section class="slide bbpa-donut-helper-example helper-whole"><div><?php include('slides/bbpa/bbpa-donut-helper-example-3.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-example helper-fat"><div><?php include('slides/bbpa/bbpa-donut-helper-example-4.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-example helper-stroke"><div><?php include('slides/bbpa/bbpa-donut-helper-example-5.html'); ?></div></section>
-	<section class="slide bbpa-donut-customisability"><div><?php include('slides/bbpa/bbpa-donut-customisability.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-example helper-example"><div><?php include('slides/bbpa/bbpa-donut-customisability-1.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-example helper-example"><div><?php include('slides/bbpa/bbpa-donut-customisability-2.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-example helper-animate"><div><?php include('slides/bbpa/bbpa-donut-customisability-3.html'); ?></div></section>
 
 	<section class="slide riba-intro"><div class="vertical-align-parent"><?php include('slides/riba/riba-intro.html'); ?></div></section>
 	<section class="slide riba-views-diagram"><div><?php include('slides/riba/riba-views-diagram.html'); ?></div></section>

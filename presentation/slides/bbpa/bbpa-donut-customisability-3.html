@@ -1,0 +1,13 @@
+<pre><code class="javascript">update: function(data){
+  ...
+  $({alpha: 0}).animate({alpha: 1}, {
+      step: function(alpha){
+            // Interpolate angles each iteration tween
+            ...
+            // Generate a new path string with interpolated angles
+            var path = Helpers.createSegment(...);
+            // Update paths
+            segments[i].plot(path);
+      }
+      ...
+</code></pre>

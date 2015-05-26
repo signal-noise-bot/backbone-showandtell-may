@@ -82,6 +82,7 @@ define([
     whole: new Donut({ radius: 120 }),
     fat: new Donut({ radius: 120, width: 50 }),
     stroke: new Donut({ radius: 120, width: 50, strokeWidth: 10 }),
+    example: new Donut({ radius: 120, width: 16 }),
   };
 
   $('.bbpa-donut-intro .module').append(donuts.intro.el);
@@ -90,6 +91,7 @@ define([
   $('.bbpa-donut-helper-example .module.whole').append(donuts.whole.el);
   $('.bbpa-donut-helper-example .module.fat').append(donuts.fat.el);
   $('.bbpa-donut-helper-example .module.stroke').append(donuts.stroke.el);
+  $('.bbpa-donut-helper-example .module.example').append(donuts.example.el);
 
   donuts.intro.update(generateData(3, ["#079772", "#068464", "#006E60"]));
   donuts.small.update([{ percentage: 10, color: "#FFFFFF" }]);
@@ -97,6 +99,24 @@ define([
   donuts.whole.update([{ percentage: 100, color: "#FFFFFF" }]);
   donuts.fat.update([{ percentage: 100, color: "#FFFFFF" }]);
   donuts.stroke.update([{ percentage: 75, color: "#FFFFFF", 'stroke': '#00DBA4' }]);
+
+  $('.bbpa-donut-helper-example.helper-example').click(function(){
+
+    var data = generateData(3, ["#079772", "#068464", "#006E60"]);
+    donuts.example.update(data);
+
+    data = _.map(data, function(item){
+      delete item.value;
+      return item;
+    });
+
+    var html = JSON.stringify(data);
+    html = html.replace("[", "");
+    html = html.replace("]", "");
+
+    $('.bbpa-donut-helper-example.helper-example .data').html(html);
+
+  });
 
 });
 
