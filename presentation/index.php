@@ -26,10 +26,10 @@
 	<section class="slide bbpa-modularity-2"><div><?php include('slides/bbpa/bbpa-modularity-2.html'); ?></div></section>
 	<section class="slide bbpa-modularity-3"><div><?php include('slides/bbpa/bbpa-modularity-3.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-intro"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-stacked-bars-intro.html'); ?></div></section>
-	<section class="slide bbpa-stacked-bars-module"><div><?php include('slides/bbpa/bbpa-stacked-bars-module.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-markup"><div><?php include('slides/bbpa/bbpa-stacked-bars-markup.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-markup-2"><div><?php include('slides/bbpa/bbpa-stacked-bars-markup-2.html'); ?></div></section>
 	<section class="slide bbpa-data-format"><div><?php include('slides/bbpa/bbpa-data-format.html'); ?></div></section>
+	<section class="slide bbpa-stacked-bars-module"><div><?php include('slides/bbpa/bbpa-stacked-bars-module.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-example"><div><?php include('slides/bbpa/bbpa-stacked-bars-example.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-customisability"><div><?php include('slides/bbpa/bbpa-stacked-bars-customisability.html'); ?></div></section>
 	<section class="slide bbpa-donut-intro"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-intro.html'); ?></div></section>
@@ -40,7 +40,6 @@
 	<section class="slide bbpa-donut-svg-syntax-3"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-3.html'); ?></div></section>
 	<section class="slide bbpa-donut-svg-syntax-4"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-4.html'); ?></div></section>
 	<section class="slide bbpa-donut-svg-syntax-6"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-6.html'); ?></div></section>
-	<section class="slide bbpa-donut-svg-syntax-7"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-7.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-1"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-helper-1.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-2"><div><?php include('slides/bbpa/bbpa-donut-helper-2.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-4"><div><?php include('slides/bbpa/bbpa-donut-helper-4.html'); ?></div></section>
@@ -73,6 +72,10 @@
 	<section class="slide riba riba-visuals-code"><div><?php include('slides/riba/riba-visuals-code.html'); ?></div></section>
 
 	<section class="slide string-theories-video"><?php include('slides/string-theories/string-theories-video.html'); ?></section>
+
+	<section class="slide outro"><div class="vertical-align-parent"><?php include('slides/outro/outro-pre.html'); ?></div></section>
+	<section class="slide outro"><div><?php include('slides/outro/outro-gifs.html'); ?></div></section>
+	<section class="slide outro shout"><div><?php include('slides/outro/outro.html'); ?></div></section>
 
 	<div class="progress"><div></div></div>
 

@@ -55,5 +55,7 @@ Slides and code examples from Backbone meetup talk
   - GIFTASTIC
   - SN web address
   - Twitter handles
+  - SN twitter handles
   - Github link
   - BBPA link
+
