@@ -1,10 +1,13 @@
-<pre><code class="xml">&lt;div class=&quot;stacked-bar&quot;&gt;</code></pre>
-<pre><code class="plain">         &lt;% _.each(data.values, fuction(value){ %&gt;</code></pre>
-<pre><code class="xml">                 &lt;div class=&quot;segment&quot; style=&quot;width: &lt;%= data.percentage %&gt;%&quot;&gt;
-                          &lt;div class=&quot;inner&quot; style=&quot;background: &lt;%= data.color %&gt;&quot;&gt;
-                                    &lt;span&gt;&lt;%= data.percentage %&gt;%&lt;/span&gt;
-                          &lt;/div&gt;
-                &lt;/div&gt;</code></pre>
-            
-<pre><code class="plain">         &lt;% }); %&gt;</code></pre>
+<pre><code class="xml">&lt;div class=&quot;stacked-bar&quot;&gt;
+
+</code></pre>
+<pre><code class="plain">    &lt;% _.each(data.values, fuction(value){ %&gt;</code></pre>
+<pre><code class="xml">          &lt;div class=&quot;segment&quot; style=&quot;width: &lt;%= value.percentage %&gt;%&quot;&gt;
+              &lt;div class=&quot;inner&quot; style=&quot;background: &lt;%= value.color %&gt;&quot;&gt;
+                &lt;span&gt;&lt;%= value.percentage %&gt;%&lt;/span&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;</code></pre>
+<pre><code class="plain">    &lt;% }); %&gt;
+
+</code></pre>
 <pre><code class="xml">&lt;/div&gt;</code></pre>
