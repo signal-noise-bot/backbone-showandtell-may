@@ -74,15 +74,17 @@ define([
 
   });
 
-
   // Donut example
   var donuts = {
     intro: new Donut({ radius: 67 }),
+    small: new Donut({ radius: 120 })
   };
 
   $('.bbpa-donut-intro .module').append(donuts.intro.el);
+  $('.bbpa-donut-helper-example-1 .module').append(donuts.small.el);
 
   donuts.intro.update(generateData(3, ["#079772", "#068464", "#006E60"]));
+  donuts.small.update([{ percentage: 30, color: "#079772" }])
 
 });
 

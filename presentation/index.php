@@ -13,50 +13,11 @@
 <body class="list">
 
 	<section class="slide shout"><div><?php include('slides/intro/intro-credits.html'); ?></div></section>
-
 	<section class="slide"><?php include('slides/intro/intro-showreel.html'); ?></section>
-
-	<section class="slide">
-		<div>
-			<h2>Shower Key Features</h2>
-			<ol>
-				<li>Built on HTML, CSS and vanilla JavaScript</li>
-				<li>All modern browsers are supported</li>
-				<li>Slide themes are separated from engine</li>
-				<li>Fully keyboard accessible</li>
-				<li>Printable to PDF</li>
-			</ol>
-			<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-		</div>
-	</section>
-
-
-	<section class="slide">
-		<div>
-			<h2>Serious Citations</h2>
-			<figure>
-				<blockquote>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-				</blockquote>
-				<figcaption>Marcus Tullius Cicero</figcaption>
-			</figure>
-		</div>
-	</section>
-
-	<section class="slide cover" id="Picture">
-		<div>
-			<h2>Pictures</h2>
-			<img src="" alt="">
-		</div>
-	</section>
-
-	<section class="slide shout">
-		<div>
-			<h2>You can even shout this way</h2>
-		</div>
-	</section>
-
-	<section class="slide"><div><?php include('slides/intro/intro-0.html'); ?></div></section>
+  <section class="slide"><div class="intro-tech-stack vertical-align-parent"><?php include('slides/intro/intro-tech-stack-frontend.html'); ?></div></section>
+  <section class="slide"><div class="intro-tech-stack vertical-align-parent"><?php include('slides/intro/intro-tech-stack-backend.html'); ?></div></section>
+  <section class="slide"><div class="intro-tech-backend-2 vertical-align-parent"><?php include('slides/intro/intro-tech-stack-backend-2.html'); ?></div></section>
+  <section class="slide"><div class="intro-tech-stack vertical-align-parent"><?php include('slides/intro/intro-tech-stack-future.html'); ?></div></section>
 
 	<section class="slide bbpa-intro"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-intro.html'); ?></div></section>
 	<section class="slide bbpa-modularity"><div><?php include('slides/bbpa/bbpa-modularity.html'); ?></div></section>
@@ -73,11 +34,11 @@
 	<section class="slide bbpa-stacked-bars-customisability"><div><?php include('slides/bbpa/bbpa-stacked-bars-customisability.html'); ?></div></section>
 	<section class="slide bbpa-donut-intro"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-intro.html'); ?></div></section>
 	<section class="slide bbpa-donut-markup"><div><?php include('slides/bbpa/bbpa-donut-markup.html'); ?></div></section>
+	<section class="slide bbpa-donut-svg-syntax-5"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-5.html'); ?></div></section>
 	<section class="slide bbpa-donut-svg-syntax-1"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-1.html'); ?></div></section>
 	<section class="slide bbpa-donut-svg-syntax-2"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-2.html'); ?></div></section>
 	<section class="slide bbpa-donut-svg-syntax-3"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-3.html'); ?></div></section>
 	<section class="slide bbpa-donut-svg-syntax-4"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-4.html'); ?></div></section>
-	<section class="slide bbpa-donut-svg-syntax-5"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-5.html'); ?></div></section>
 	<section class="slide bbpa-donut-svg-syntax-6"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-6.html'); ?></div></section>
 	<section class="slide bbpa-donut-svg-syntax-7"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-7.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-1"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-helper-1.html'); ?></div></section>
@@ -85,9 +46,9 @@
 	<section class="slide bbpa-donut-helper-4"><div><?php include('slides/bbpa/bbpa-donut-helper-4.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-3"><div><?php include('slides/bbpa/bbpa-donut-helper-3.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-5"><div><?php include('slides/bbpa/bbpa-donut-helper-5.html'); ?></div></section>
-	<section class="slide bbpa-donut-helper-example-1"><div><?php include('slides/bbpa/bbpa-donut-helper-example-1.html'); ?></div></section>
-	<section class="slide bbpa-donut-helper-example-2"><div><?php include('slides/bbpa/bbpa-donut-helper-example-2.html'); ?></div></section>
-	<section class="slide bbpa-donut-helper-example-3"><div><?php include('slides/bbpa/bbpa-donut-helper-example-3.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-example"><div><?php include('slides/bbpa/bbpa-donut-helper-example-1.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-example"><div><?php include('slides/bbpa/bbpa-donut-helper-example-2.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-example"><div><?php include('slides/bbpa/bbpa-donut-helper-example-3.html'); ?></div></section>
 	<section class="slide bbpa-donut-customisability"><div><?php include('slides/bbpa/bbpa-donut-customisability.html'); ?></div></section>
 
 	<section class="slide riba riba-intro"><div class="vertical-align-parent"><?php include('slides/riba/riba-intro.html'); ?></div></section>
