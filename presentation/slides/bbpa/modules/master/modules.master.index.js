@@ -16,6 +16,8 @@ define([
 
       initialize: function(options){
 
+        console.log("options", options);
+
         this._view = new this.view(options);
 
         this.listenTo(this._view, "all", this.trigger);

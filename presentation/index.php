@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/all.css">
 </head>
 <body class="list">
-	
+
 	<section class="slide shout"><div><?php include('slides/intro/intro-credits.html'); ?></div></section>
 
 	<section class="slide"><?php include('slides/intro/intro-showreel.html'); ?></section>
@@ -71,13 +71,24 @@
 	<section class="slide bbpa-data-format"><div><?php include('slides/bbpa/bbpa-data-format.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-example"><div><?php include('slides/bbpa/bbpa-stacked-bars-example.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-customisability"><div><?php include('slides/bbpa/bbpa-stacked-bars-customisability.html'); ?></div></section>
-	<section class="slide bbpa-donut-intro"><div><?php include('slides/bbpa/bbpa-donut-intro.html'); ?></div></section>
+	<section class="slide bbpa-donut-intro"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-intro.html'); ?></div></section>
 	<section class="slide bbpa-donut-markup"><div><?php include('slides/bbpa/bbpa-donut-markup.html'); ?></div></section>
+	<section class="slide bbpa-donut-svg-syntax-1"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-1.html'); ?></div></section>
+	<section class="slide bbpa-donut-svg-syntax-2"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-2.html'); ?></div></section>
+	<section class="slide bbpa-donut-svg-syntax-3"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-3.html'); ?></div></section>
+	<section class="slide bbpa-donut-svg-syntax-4"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-4.html'); ?></div></section>
+	<section class="slide bbpa-donut-svg-syntax-5"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-5.html'); ?></div></section>
+	<section class="slide bbpa-donut-svg-syntax-6"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-6.html'); ?></div></section>
+	<section class="slide bbpa-donut-svg-syntax-7"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-7.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-1"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-helper-1.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-2"><div><?php include('slides/bbpa/bbpa-donut-helper-2.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-4"><div><?php include('slides/bbpa/bbpa-donut-helper-4.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-3"><div><?php include('slides/bbpa/bbpa-donut-helper-3.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-5"><div><?php include('slides/bbpa/bbpa-donut-helper-5.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-example-1"><div><?php include('slides/bbpa/bbpa-donut-helper-example-1.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-example-2"><div><?php include('slides/bbpa/bbpa-donut-helper-example-2.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-example-3"><div><?php include('slides/bbpa/bbpa-donut-helper-example-3.html'); ?></div></section>
 	<section class="slide bbpa-donut-customisability"><div><?php include('slides/bbpa/bbpa-donut-customisability.html'); ?></div></section>
-	<section class="slide bbpa-donut-svg-syntax"><div><?php include('slides/bbpa/bbpa-donut-svg-syntax.html'); ?></div></section>
-	<section class="slide bbpa-helper"><div><?php include('slides/bbpa/bbpa-helper.html'); ?></div></section>
-	<section class="slide bbpa-helper-example"><div><?php include('slides/bbpa/bbpa-helper-example.html'); ?></div></section>
-
 
 	<section class="slide riba-intro"><div class="vertical-align-parent"><?php include('slides/riba/riba-intro.html'); ?></div></section>
 	<section class="slide riba-views-diagram"><div><?php include('slides/riba/riba-views-diagram.html'); ?></div></section>
@@ -100,7 +111,7 @@
 	<section class="slide riba-visuals-title"><div><?php include('slides/riba/riba-visuals-title.html'); ?></div></section>
 	<section class="slide riba-visuals-code"><div><?php include('slides/riba/riba-visuals-code.html'); ?></div></section>
 
-	<!-- <div class="progress"><div></div></div> -->
+	<div class="progress"><div></div></div>
 
 	<script src="shower/shower.min.js"></script>
   	<script data-main="init" src="lib/requirejs/require.js"></script>

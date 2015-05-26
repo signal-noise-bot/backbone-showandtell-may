@@ -1,0 +1,12 @@
+<pre><code class="javascript">createArcPath: function(params){
+
+  // Builds string from params passed
+  var arc = params.absolute ? "A" : "a";
+  arc += params.radius + "," + params.radius + " ";
+  arc += params.xAxisRotation + " " + params.largeArcFlag + ",";
+  arc += params.sweepFlag + " ";
+  arc += params.x + "," + params.y + " ";
+
+  return arc;
+}
+</code></pre>

@@ -2,7 +2,7 @@ define([
   './../../master/modules.master.view',
   'text!./modules.charts.donut.template.html',
   'svg',
-  'helpers/helpers.svg'
+  'slides/helpers.svg'
 ], function(Master, template, SVG, SVGHelpers){
 
   return Master.extend({
@@ -30,9 +30,9 @@ define([
 
     },
 
-    initialize: function(){
+    initialize: function(options){
 
-      this._super();
+      this._super(options);
 
       this.render();
 
@@ -63,7 +63,7 @@ define([
     createSegment: function(data){
 
       // Empty path
-      var path = SVGHelpers.segment({
+      var path = SVGHelpers.createSegment({
         cx: this.options.radius,
         cy: this.options.radius,
         radius: this.options.radius,
@@ -128,7 +128,7 @@ define([
             angles.end = segment.end + (offsetAngle.end * alpha);
 
             // Generate a new path string with interpolated angles
-            var path = SVGHelpers.segment({
+            var path = SVGHelpers.createSegment({
               cx: self.options.radius,
               cy: self.options.radius,
               radius: self.options.radius,

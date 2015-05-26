@@ -7,11 +7,7 @@ require.config({
     "text": "lib/requirejs-text/text",
     "velocity": "lib/velocity/velocity",
     "velocity-ui": "lib/velocity/velocity.ui.min",
-		// "templates": "templates",
-		// "views": "views",
-		// "models": "models",
-		// "data": "../data",
-		// "modules": "../../modules",
+    "svg": 'lib/svg.js/dist/svg.min',
 	},
 	shim: {
 		"underscore": { exports: "_" },

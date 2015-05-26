@@ -19,6 +19,7 @@
     "jquery": "~2.1.4",
     "backbone-super": "~1.0.4",
     "requirejs-text": "~2.0.14",
-    "velocity": "~1.2.2"
+    "velocity": "~1.2.2",
+    "svg.js": "https://github.com/zachrbrown/svg.js.git"
   }
 }

@@ -15,6 +15,12 @@
   .vertical-align{
     width: 70%;
   }
+  h2{
+    margin-bottom: 30px;
+  }
+  .module{
+    min-height: 53px;
+  }
   .stacked-bar{
     height: 28px !important;
     width: 100%;
@@ -48,4 +54,74 @@
     height: 33%;
   }
 
+}
+
+.bbpa-donut-intro{
+
+  .title{
+    margin-bottom: 30px;
+  }
+
+  .module{
+    min-width: 150px;
+    min-height: 150px;
+  }
+  svg{
+    margin: auto;
+    display: block;
+  }
+
+}
+
+.bbpa-donut-svg-syntax-1{
+  pre code{
+    padding: 3px;
+    white-space: normal;    
+  }
+}
+
+.bbpa-donut-svg-syntax-6, .bbpa-donut-svg-syntax-7{
+  h2{
+    margin-bottom: 10px;
+  }
+  ul{
+    list-style-type: none;
+  }
+  li{
+    display: inline-block;
+    text-indent: 0 !important;
+    margin-right: 30px;
+    &:before{
+      content: none !important;
+    }
+    &.x-axis-rotation{
+      color: red;
+    }
+  }
+  .command{
+    font-family: 'Inconsolata';
+    font-size: 60px;
+    padding-bottom: 200px;
+    margin-top: 30px;
+    span{
+      display: inline;
+      position: relative;
+      text-indent: 0 !important;
+      .param{
+        font-family: 'Open sans';
+        font-size: 26px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        -webkit-transform: rotate(45deg);
+        -webkit-transform-origin: 0 50%;
+      }
+    }
+  }
+}
+
+.bbpa-donut-helper{
+  h2{
+    margin-bottom: 20px;
+  }
 }

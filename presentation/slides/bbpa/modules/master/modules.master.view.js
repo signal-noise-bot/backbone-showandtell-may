@@ -20,6 +20,8 @@ define([
 
       this.setDefaults();
 
+      console.log("options", options);
+
       this.options = _.extend(this.defaults, options);
 
       this.addStyle();
