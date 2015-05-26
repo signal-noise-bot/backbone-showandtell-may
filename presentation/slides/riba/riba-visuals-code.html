@@ -1,20 +1,18 @@
-<h1>The Visuals</h1>
-
 <div class="scroll">
 	<pre>
 		<code>
+			// views.sections.js
 			define([
 			  'globals',
 			  'views/views.master',
 			  'modules/bar-graph/modules.bar-graph.index',
 			  'modules/curved-line-graph/modules.curved-line-graph.index',
 			  'modules/tab-bar/modules.tab-bar.index',
-			  'modules/selector/modules.selector.index',
 			  'modules/legend/modules.legend.index',
 			  'views/views.table',
 			  'modules/info/modules.info.index',
 			  'text!templates/section.html',
-			], function(Globals, Master, BarGraph, CurvedLineGraph, TabBar, Selector, Legend, TableView, Info, template) {
+			], function(Globals, Master, BarGraph, CurvedLineGraph, TabBar, Legend, TableView, Info, template) {
 			  return Master.extend({
 			    templates: {...},
 			    className: 'section',
@@ -36,38 +34,23 @@
 			    },
 			    renderGraphs: function() {
 			      var type = this.data['graph-type'];
-			      var subSections = this.data['sub-sections'];
-			      var self = this;
-			      this.graphs = [];
-			      this.legendViews = [];
 			      if (!this.visuals[type]) return;
 			      var graph = new this.visuals[type]({
 			        data: this.data
 			      });
-			      this.graphs.push(graph);
 			      this.$visualContainer.html(graph.el);
-			      if (subSections) {...
-			      }
+			      if (subSections) {...}
 			      this.addControls();
 			    },
-			    addEvents: function() {...
-			    },
-			    onResize: function(e) {...
-			    },
-			    updateGraphs: function() {...
-			    },
-			    addControls: function() {...
-			    },
-			    doExport: function(e){...
-			    },
-			    onControlChange: function(e) {...
-			    },
-			    transitionGraphs: function(section) {...
-			    },
-			    isShowControls: function() {...
-			    },
-			    remove: function() {...
-			    }
+			    addEvents: function() {...},
+			    onResize: function(e) {...},
+			    updateGraphs: function() {...},
+			    addControls: function() {...},
+			    doExport: function(e){...},
+			    onControlChange: function(e) {...},
+			    transitionGraphs: function(section) {...},
+			    isShowControls: function() {...},
+			    remove: function() {...}
 			  });
 
 			});

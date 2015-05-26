@@ -54,17 +54,23 @@
 	<section class="slide riba riba-intro"><div class="vertical-align-parent"><?php include('slides/riba/riba-intro.html'); ?></div></section>
 	<section class="slide riba riba-views-diagram"><div><?php include('slides/riba/riba-views-diagram.html'); ?></div></section>
 	<section class="slide riba riba-data-all"><div><?php include('slides/riba/riba-data-all.html'); ?></div></section>
-	<section class="slide riba riba-router-title"><div><?php include('slides/riba/riba-router-title.html'); ?></div></section>
-	<section class="slide riba riba-router-code"><div><?php include('slides/riba/riba-router-code.html'); ?></div></section>
+	
 	<section class="slide riba riba-navigation-title"><div><?php include('slides/riba/riba-navigation-title.html'); ?></div></section>
-	<section class="slide riba riba-data-all"><div><?php include('slides/riba/riba-data-all.html'); ?></div></section>
 	<section class="slide riba riba-navigation-code"><div><?php include('slides/riba/riba-navigation-code.html'); ?></div></section>
+	
 	<section class="slide riba riba-controls-title"><div><?php include('slides/riba/riba-controls-title.html'); ?></div></section>
 	<section class="slide riba riba-controls-data"><div><?php include('slides/riba/riba-controls-data.html'); ?></div></section>
 	<section class="slide riba riba-controls-code"><div><?php include('slides/riba/riba-controls-code.html'); ?></div></section>
+	
+	<section class="slide riba riba-router-title"><div><?php include('slides/riba/riba-router-title.html'); ?></div></section>
+	<section class="slide riba riba-data-all"><div><?php include('slides/riba/riba-data-all.html'); ?></div></section>
+	<section class="slide riba riba-router-code"><div><?php include('slides/riba/riba-router-code.html'); ?></div></section>
+
 	<section class="slide riba riba-content-title"><div><?php include('slides/riba/riba-content-title.html'); ?></div></section>
 	<section class="slide riba riba-content-code"><div><?php include('slides/riba/riba-content-code.html'); ?></div></section>
+
 	<section class="slide riba riba-visuals-title"><div><?php include('slides/riba/riba-visuals-title.html'); ?></div></section>
+	<section class="slide riba riba-data-all"><div><?php include('slides/riba/riba-data-all.html'); ?></div></section>
 	<section class="slide riba riba-visuals-code"><div><?php include('slides/riba/riba-visuals-code.html'); ?></div></section>
 
 	<div class="progress"><div></div></div>
