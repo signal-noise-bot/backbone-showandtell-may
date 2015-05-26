@@ -3,27 +3,14 @@
 		<code>
 			// views.sections.js
 			define([
-			  'globals',
-			  'views/views.master',
-			  'modules/bar-graph/modules.bar-graph.index',
-			  'modules/curved-line-graph/modules.curved-line-graph.index',
-			  'modules/tab-bar/modules.tab-bar.index',
-			  'modules/legend/modules.legend.index',
-			  'views/views.table',
-			  'modules/info/modules.info.index',
-			  'text!templates/section.html',
+				...
 			], function(Globals, Master, BarGraph, CurvedLineGraph, TabBar, Legend, TableView, Info, template) {
 			  return Master.extend({
-			    templates: {...},
-			    className: 'section',
-			    events: {},
-			    messages: {...},
+			  	...
 			    visuals: {
 			      'bar-graph': BarGraph,
 			      'curved-line': CurvedLineGraph
 			    },
-			    controls: {...},
-			    initialize: function(options) {...},
 			    render: function() {
 			      this.renderGraphs();
 			      this.listenTo(Globals.Router, 'route', function(main, route) {
@@ -42,15 +29,7 @@
 			      if (subSections) {...}
 			      this.addControls();
 			    },
-			    addEvents: function() {...},
-			    onResize: function(e) {...},
-			    updateGraphs: function() {...},
-			    addControls: function() {...},
-			    doExport: function(e){...},
-			    onControlChange: function(e) {...},
-			    transitionGraphs: function(section) {...},
-			    isShowControls: function() {...},
-			    remove: function() {...}
+			    ...
 			  });
 
 			});

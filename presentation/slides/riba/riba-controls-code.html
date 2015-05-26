@@ -3,34 +3,22 @@
 		<code>
 		// views.controls.js
 		define([
-		  'globals',
-		  'views/views.master',
-		  'modules/toggle/modules.toggle.index',
-		  'modules/dropdown/modules.dropdown.index',
-		  'modules/slider/modules.slider.index',
-		  'modules/info/modules.info.index',
-		  'text!templates/control.html',
+			...
 		], function(Globals, Master, Toggle, Dropdown, Slider, Info, template){
 		  return Master.extend({
-		    templates: {...},
 		    modules: {
 		      "toggle": Toggle,
 		      "dropdown": Dropdown,
 		      "slider": Slider,
 		      "info": Info
 		    },
-		    initialize: function() {...},
-		    render: function(){...},
-		    update: function() {...},
 		    addControl: function() {
 		      var type = this.model.get('type');
 		      if (this.modules[type] == undefined) return;
 		      var view = new this.modules[type]({model: this.model});
 		      this.$control.append(view.el);
 		    },
-		    addEvents: function() {...},
-		    onModelChange: function(model) {...},
-		    remove: function() {...}
+		    ...
 		  });
 		});
 		</code>

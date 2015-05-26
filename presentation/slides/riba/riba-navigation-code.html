@@ -3,21 +3,12 @@
 		<code>
 		// views.sidebar.navigation.js
 		define([
-		  'globals',
-		  'views/views.sidebar',
-		  'text!templates/sidebar.navigation.html',
+			...
 		], function(Globals, Master, template){
 		  return Master.extend({
-		    instant: true,
-		    className: 'sidebar',
-		    classModifier: 'navigation',
-		    templates: {...},
-		    events: {...},
-		    initialize: function() {...},
 		    addEvents: function() {
 		      this.listenTo(Globals.Router, 'route', this.onRouteChange, this);
 		    },
-		    render: function() {...},
 		    onRouteChange: function(e, fragments) {
 		      var $parent = this.$('.js-parent-' + fragments[0]);
 		      var $child = this.$('.js-child-' + fragments[1]);
@@ -32,7 +23,7 @@
 		        $children.slideDown('fast');
 		      this.instant = false;
 		    },
-		    slideUp: function() {...}
+		    ...
 		  });
 		});
 		</code>
