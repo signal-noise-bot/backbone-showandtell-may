@@ -1,31 +1,31 @@
 <div class="scroll">
-	<pre>
-		<code>
-		// views.sidebar.navigation.js
-		define([
-			...
-		], function(Globals, Master, template){
-		  return Master.extend({
-		    addEvents: function() {
-		      this.listenTo(Globals.Router, 'route', this.onRouteChange, this);
-		    },
-		    onRouteChange: function(e, fragments) {
-		      var $parent = this.$('.js-parent-' + fragments[0]);
-		      var $child = this.$('.js-child-' + fragments[1]);
-		      var $children = $parent.next('.js-children');
-		      this.$items.removeClass('js-active');
-		      $parent.addClass('js-active');
-		      $child.addClass('js-active');
-		      this.slideUp();
-		      if (this.instant)
-		        $children.show();
-		      else
-		        $children.slideDown('fast');
-		      this.instant = false;
-		    },
-		    ...
-		  });
-		});
-		</code>
-	</pre>
+<pre>
+<code>
+// views.sidebar.navigation.js
+define([
+	...
+], function(Globals, Master, template){
+return Master.extend({
+    addEvents: function() {
+      this.listenTo(Globals.Router, 'route', this.onRouteChange, this);
+    },
+    onRouteChange: function(e, fragments) {
+      var $parent = this.$('.js-parent-' + fragments[0]);
+      var $child = this.$('.js-child-' + fragments[1]);
+      var $children = $parent.next('.js-children');
+      this.$items.removeClass('js-active');
+      $parent.addClass('js-active');
+      $child.addClass('js-active');
+      this.slideUp();
+      if (this.instant)
+        $children.show();
+      else
+        $children.slideDown('fast');
+      this.instant = false;
+    },
+    ...
+  });
+});
+</code>
+</pre>
 </div>

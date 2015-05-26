@@ -1,26 +1,26 @@
 <div class="scroll">
-	<pre>
-		<code>
-		// views.controls.js
-		define([
-			...
-		], function(Globals, Master, Toggle, Dropdown, Slider, Info, template){
-		  return Master.extend({
-		    modules: {
-		      "toggle": Toggle,
-		      "dropdown": Dropdown,
-		      "slider": Slider,
-		      "info": Info
-		    },
-		    addControl: function() {
-		      var type = this.model.get('type');
-		      if (this.modules[type] == undefined) return;
-		      var view = new this.modules[type]({model: this.model});
-		      this.$control.append(view.el);
-		    },
-		    ...
-		  });
-		});
-		</code>
-	</pre>
+<pre>
+<code>
+// views.controls.js
+define([
+	...
+], function(Globals, Master, Toggle, Dropdown, Slider, Info, template){
+  return Master.extend({
+    modules: {
+      "toggle": Toggle,
+      "dropdown": Dropdown,
+      "slider": Slider,
+      "info": Info
+    },
+    addControl: function() {
+      var type = this.model.get('type');
+      if (this.modules[type] == undefined) return;
+      var view = new this.modules[type]({model: this.model});
+      this.$control.append(view.el);
+    },
+    ...
+  });
+});
+</code>
+</pre>
 </div>

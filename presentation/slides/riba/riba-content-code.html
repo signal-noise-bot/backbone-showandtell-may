@@ -1,26 +1,26 @@
 <div class="scroll">
-	<pre>
-		<code>
-		// views.content.js
-		define([
-			...
-		], function(Globals, Master, Header, Section, template) {
-		  return Master.extend({
-		  	...
-		    renderSections: function() {
-		      _.each(this.sectionsData, function(data) {
-		        var section = new Section({
-		          data: data,
-		          page: this.page
-		        });
-		        this.$sections.append(section.el);
-		        section.render();
-		      }, this);
-		    },
-		    ...
-		  });
+<pre>
+<code>
+// views.content.js
+define([
+	...
+], function(Globals, Master, Header, Section, template) {
+  return Master.extend({
+  	...
+    renderSections: function() {
+      _.each(this.sectionsData, function(data) {
+        var section = new Section({
+          data: data,
+          page: this.page
+        });
+        this.$sections.append(section.el);
+        section.render();
+      }, this);
+    },
+    ...
+  });
 
-		});
-		</code>	
-	</pre>
+});
+</code>	
+</pre>
 </div>

@@ -1,38 +1,38 @@
 <div class="scroll">
-	<pre>
-		<code>
-			// views.sections.js
-			define([
-				...
-			], function(Globals, Master, BarGraph, CurvedLineGraph, TabBar, Legend, TableView, Info, template) {
-			  return Master.extend({
-			  	...
-			    visuals: {
-			      'bar-graph': BarGraph,
-			      'curved-line': CurvedLineGraph
-			    },
-			    render: function() {
-			      this.renderGraphs();
-			      this.listenTo(Globals.Router, 'route', function(main, route) {
-			        var section = route[1];
-			        this.transitionGraphs(section);
-			      }, this);
-			      return this;
-			    },
-			    renderGraphs: function() {
-			      var type = this.data['graph-type'];
-			      if (!this.visuals[type]) return;
-			      var graph = new this.visuals[type]({
-			        data: this.data
-			      });
-			      this.$visualContainer.html(graph.el);
-			      if (subSections) {...}
-			      this.addControls();
-			    },
-			    ...
-			  });
+<pre>
+<code>
+// views.sections.js
+define([
+	...
+], function(Globals, Master, BarGraph, CurvedLineGraph, TabBar, Legend, TableView, Info, template) {
+  return Master.extend({
+  	...
+    visuals: {
+      'bar-graph': BarGraph,
+      'curved-line': CurvedLineGraph
+    },
+    render: function() {
+      this.renderGraphs();
+      this.listenTo(Globals.Router, 'route', function(main, route) {
+        var section = route[1];
+        this.transitionGraphs(section);
+      }, this);
+      return this;
+    },
+    renderGraphs: function() {
+      var type = this.data['graph-type'];
+      if (!this.visuals[type]) return;
+      var graph = new this.visuals[type]({
+        data: this.data
+      });
+      this.$visualContainer.html(graph.el);
+      if (subSections) {...}
+      this.addControls();
+    },
+    ...
+  });
 
-			});
-		</code>
-	</pre>
+});
+</code>
+</pre>
 </div>

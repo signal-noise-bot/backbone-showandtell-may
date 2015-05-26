@@ -1,34 +1,34 @@
 <div class="scroll">
 <pre>
-  <code class="javascript">
-  // routers.main.js
-  define([
-    ...
-  ], function(Globals, Master, Content, Print, Report) {
-    return Master.extend({
-      routes: {
-        ...
-        ':page(/:section)': "main",
-        ...
-      },
-      main: function(page, section) {
-        var pageModel = Globals.Questions.All.findWhere({
-          "slug": page
-        });
-        this.page = page;
-        this.section = section;
-        if (!page || !pageModel) {
-          page = Globals.Questions.All.at(0).get("slug"); // if no page route, get first
-        }
-        this.newPage = {
-          view: new Content({
-            page: page,
-            model: pageModel
-          })
-        };
+<code class="javascript">
+// routers.main.js
+define([
+  ...
+], function(Globals, Master, Content, Print, Report) {
+  return Master.extend({
+    routes: {
+      ...
+      ':page(/:section)': "main",
+      ...
+    },
+    main: function(page, section) {
+      var pageModel = Globals.Questions.All.findWhere({
+        "slug": page
+      });
+      this.page = page;
+      this.section = section;
+      if (!page || !pageModel) {
+        page = Globals.Questions.All.at(0).get("slug"); // if no page route, get first
       }
-    });
+      this.newPage = {
+        view: new Content({
+          page: page,
+          model: pageModel
+        })
+      };
+    }
   });
-  </code>
+});
+</code>
 </pre>
 </div>
