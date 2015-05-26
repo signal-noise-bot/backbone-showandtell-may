@@ -1,88 +1,38 @@
-<h1>The Controls / Filters</h1>
-
-<pre>
-	<code>define([</code>
-	<code>'globals',</code>
-	<code>'views/views.master',</code>
-	<code>'modules/toggle/modules.toggle.index',</code>
-	<code>'modules/dropdown/modules.dropdown.index',</code>
-	<code>'modules/slider/modules.slider.index',</code>
-	<code>'modules/info/modules.info.index',</code>
-	<code>'text!templates/control.html',</code>
-	<code>], function(Globals, Master, Toggle, Dropdown, Slider, Info, template){</code>
-	<code></code>
-	<code>return Master.extend({</code>
-	<code></code>
-	<code>templates: {</code>
-	<code>'main' : template,</code>
-	<code>},</code>
-	<code></code>
-	<code>modules: {</code>
-	<code>"toggle": Toggle,</code>
-	<code>"dropdown": Dropdown,</code>
-	<code>"slider": Slider,</code>
-	<code>"info": Info</code>
-	<code>},</code>
-	<code></code>
-	<code>initialize: function() {...</code>
-	<code>},</code>
-	<code></code>
-	<code>render: function(){</code>
-	<code></code>
-	<code>this._super({</code>
-	<code>model: this.model</code>
-	<code>});</code>
-	<code></code>
-	<code>this.$label = this.$('.js-label');</code>
-	<code>this.$control = this.$('.js-control');</code>
-	<code>this.$cover = this.$('.js-cover');</code>
-	<code></code>
-	<code>this.addControl();      </code>
-	<code>this.addEvents();</code>
-	<code></code>
-	<code>this.update();</code>
-	<code></code>
-	<code>return this;</code>
-	<code>},</code>
-	<code></code>
-	<code>update: function() {</code>
-	<code>var disabled = this.model.get('disabled');</code>
-	<code>var hidden = this.model.get('hidden');</code>
-	<code>var invalid = this.model.get('invalid');</code>
-	<code></code>
-	<code>this.$cover.toggleClass('js-hidden', !disabled);</code>
-	<code></code>
-	<code>this.$el.toggleClass('js-disabled', disabled);</code>
-	<code>this.$el.toggleClass('js-hidden', hidden);</code>
-	<code>this.$el.toggleClass('js-invalid', invalid);</code>
-	<code>},</code>
-	<code></code>
-	<code>addControl: function() {</code>
-	<code></code>
-	<code>var type = this.model.get('type');</code>
-	<code></code>
-	<code>if (this.modules[type] == undefined) return;</code>
-	<code></code>
-	<code>var view = new this.modules[type]({model: this.model});</code>
-	<code></code>
-	<code>this.$control.append(view.el);</code>
-	<code></code>
-	<code>},</code>
-	<code></code>
-	<code>addEvents: function() {</code>
-	<code>this.listenTo(this.model, 'change', this.onModelChange, this);</code>
-	<code>},</code>
-	<code></code>
-	<code>onModelChange: function(model) {</code>
-	<code>this.update(model);</code>
-	<code>},</code>
-	<code></code>
-	<code>remove: function() {</code>
-	<code>this._super();</code>
-	<code></code>
-	<code>return this;</code>
-	<code>}</code>
-	<code></code>
-	<code>});</code>
-	<code>});</code>
-</pre>
+<div class="scroll">
+	<pre>
+		<code>
+		// views.controls.js
+		define([
+		  'globals',
+		  'views/views.master',
+		  'modules/toggle/modules.toggle.index',
+		  'modules/dropdown/modules.dropdown.index',
+		  'modules/slider/modules.slider.index',
+		  'modules/info/modules.info.index',
+		  'text!templates/control.html',
+		], function(Globals, Master, Toggle, Dropdown, Slider, Info, template){
+		  return Master.extend({
+		    templates: {...},
+		    modules: {
+		      "toggle": Toggle,
+		      "dropdown": Dropdown,
+		      "slider": Slider,
+		      "info": Info
+		    },
+		    initialize: function() {...},
+		    render: function(){...},
+		    update: function() {...},
+		    addControl: function() {
+		      var type = this.model.get('type');
+		      if (this.modules[type] == undefined) return;
+		      var view = new this.modules[type]({model: this.model});
+		      this.$control.append(view.el);
+		    },
+		    addEvents: function() {...},
+		    onModelChange: function(model) {...},
+		    remove: function() {...}
+		  });
+		});
+		</code>
+	</pre>
+</div>
