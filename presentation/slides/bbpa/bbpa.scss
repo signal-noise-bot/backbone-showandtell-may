@@ -133,5 +133,29 @@
 }
 
 .bbpa-donut-helper-example{
-  
+  .left, .right{
+    float: left;
+    width: 50%;
+    height: 100%;
+  }
+  &.helper-large{
+    .hljs-number:nth-child(7){
+      color: yellow;
+    }
+  }
+  &.helper-whole{
+    .hljs-number:nth-child(7){
+      color: yellow;
+    }
+  }
+  &.helper-fat{
+    .hljs-number:nth-child(5){
+      color: yellow;
+    }
+  }
+  &.helper-stroke{
+    .hljs-number:nth-child(8){
+      color: yellow;
+    }
+  }
 }

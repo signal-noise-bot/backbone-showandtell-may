@@ -47,8 +47,10 @@
 	<section class="slide bbpa-donut-helper-3"><div><?php include('slides/bbpa/bbpa-donut-helper-3.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-5"><div><?php include('slides/bbpa/bbpa-donut-helper-5.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-example"><div><?php include('slides/bbpa/bbpa-donut-helper-example-1.html'); ?></div></section>
-	<section class="slide bbpa-donut-helper-example"><div><?php include('slides/bbpa/bbpa-donut-helper-example-2.html'); ?></div></section>
-	<section class="slide bbpa-donut-helper-example"><div><?php include('slides/bbpa/bbpa-donut-helper-example-3.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-example helper-large"><div><?php include('slides/bbpa/bbpa-donut-helper-example-2.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-example helper-whole"><div><?php include('slides/bbpa/bbpa-donut-helper-example-3.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-example helper-fat"><div><?php include('slides/bbpa/bbpa-donut-helper-example-4.html'); ?></div></section>
+	<section class="slide bbpa-donut-helper-example helper-stroke"><div><?php include('slides/bbpa/bbpa-donut-helper-example-5.html'); ?></div></section>
 	<section class="slide bbpa-donut-customisability"><div><?php include('slides/bbpa/bbpa-donut-customisability.html'); ?></div></section>
 
 	<section class="slide riba-intro"><div class="vertical-align-parent"><?php include('slides/riba/riba-intro.html'); ?></div></section>

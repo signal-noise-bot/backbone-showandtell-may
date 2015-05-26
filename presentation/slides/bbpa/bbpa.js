@@ -77,14 +77,26 @@ define([
   // Donut example
   var donuts = {
     intro: new Donut({ radius: 67 }),
-    small: new Donut({ radius: 120 })
+    small: new Donut({ radius: 120 }),
+    large: new Donut({ radius: 120 }),
+    whole: new Donut({ radius: 120 }),
+    fat: new Donut({ radius: 120, width: 50 }),
+    stroke: new Donut({ radius: 120, width: 50, strokeWidth: 10 }),
   };
 
   $('.bbpa-donut-intro .module').append(donuts.intro.el);
-  $('.bbpa-donut-helper-example-1 .module').append(donuts.small.el);
+  $('.bbpa-donut-helper-example .module.small').append(donuts.small.el);
+  $('.bbpa-donut-helper-example .module.large').append(donuts.large.el);
+  $('.bbpa-donut-helper-example .module.whole').append(donuts.whole.el);
+  $('.bbpa-donut-helper-example .module.fat').append(donuts.fat.el);
+  $('.bbpa-donut-helper-example .module.stroke').append(donuts.stroke.el);
 
   donuts.intro.update(generateData(3, ["#079772", "#068464", "#006E60"]));
-  donuts.small.update([{ percentage: 30, color: "#079772" }])
+  donuts.small.update([{ percentage: 10, color: "#FFFFFF" }]);
+  donuts.large.update([{ percentage: 70, color: "#FFFFFF" }]);
+  donuts.whole.update([{ percentage: 100, color: "#FFFFFF" }]);
+  donuts.fat.update([{ percentage: 100, color: "#FFFFFF" }]);
+  donuts.stroke.update([{ percentage: 75, color: "#FFFFFF", 'stroke': '#00DBA4' }]);
 
 });
 

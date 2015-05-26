@@ -25,7 +25,8 @@ define([
         spacing: 2,
         width: 16,
         duration: 600,
-        segmentColor: "#098C67"
+        segmentColor: "#098C67",
+        strokeWidth: 0
       });
 
     },
@@ -75,6 +76,13 @@ define([
       // Create segment and fill with color if provided or default
       var segment = this.svg.path(path).attr({ fill: data.color || this.options.segment });
 
+      if(data.stroke){
+        segment.attr({ 
+          stroke: data.stroke,
+          'stroke-width': this.options.strokeWidth
+        });
+      }
+
       // Clone segment for shadow
       var shadow = segment.clone();
       shadow.attr({ fill: "#000", "fill-opacity": 0.15 });
@@ -111,11 +119,15 @@ define([
         // Size of segment
         var segmentAngle = 360 * (item.percentage/100);
 
+        if(segmentAngle == 360) this.options.spacing = 0;
+
         // Start and emd angle differences between new position and current position
         var offsetAngle = {
           start: currentAngle - segment.start,
           end: (currentAngle + segmentAngle) - segment.end
         };
+
+        console.log("this", this);
 
         // Animate to new angles
         $({alpha: 0}).animate({alpha: 1}, {
@@ -134,7 +146,8 @@ define([
               radius: self.options.radius,
               width: self.options.width,
               startAngle: angles.start,
-              endAngle: angles.end - self.options.spacing
+              endAngle: angles.end - self.options.spacing,
+              strokeWidth: self.options.strokeWidth
             });
 
             // Update paths
