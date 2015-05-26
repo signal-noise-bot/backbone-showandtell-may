@@ -1,126 +1,76 @@
-<h1>The Visuals (views.section.js)</h1>
+<h1>The Visuals</h1>
 
-<pre>
-	<code>define([</code>
-	<code>'globals',</code>
-	<code>'views/views.master',</code>
-	<code>'modules/bar-graph/modules.bar-graph.index',</code>
-	<code>'modules/curved-line-graph/modules.curved-line-graph.index',</code>
-	<code>'modules/tab-bar/modules.tab-bar.index',</code>
-	<code>'modules/selector/modules.selector.index',</code>
-	<code>'modules/legend/modules.legend.index',</code>
-	<code>'views/views.table',</code>
-	<code>'modules/info/modules.info.index',</code>
-	<code>'text!templates/section.html',</code>
-	<code>], function(Globals, Master, BarGraph, CurvedLineGraph, TabBar, Selector, Legend, TableView, Info, template) {</code>
-	<code></code>
-	<code>return Master.extend({</code>
-	<code></code>
-	<code>templates: {</code>
-	<code>'main': template,</code>
-	<code>},</code>
-	<code></code>
-	<code>className: 'section',</code>
-	<code></code>
-	<code>events: {},</code>
-	<code></code>
-	<code>messages: {...</code>
-	<code>},</code>
-	<code></code>
-	<code>visuals: {</code>
-	<code>'bar-graph': BarGraph,</code>
-	<code>'curved-line': CurvedLineGraph</code>
-	<code>},</code>
-	<code></code>
-	<code>controls: {...</code>
-	<code>},</code>
-	<code></code>
-	<code>initialize: function(options) {</code>
-	<code></code>
-	<code>this._super();</code>
-	<code></code>
-	<code>this.options = options;</code>
-	<code>this.data = options.data;</code>
-	<code>this.section = this.data.slug;</code>
-	<code></code>
-	<code>this.addEvents();</code>
-	<code></code>
-	<code>return this;</code>
-	<code>},</code>
-	<code></code>
-	<code>render: function() {</code>
-	<code>var self = this;</code>
-	<code></code>
-	<code>this._super({...</code>
-	<code>});</code>
-	<code></code>
-	<code>...</code>
-	<code></code>
-	<code>this.renderGraphs();</code>
-	<code></code>
-	<code>this.listenTo(Globals.Router, 'route', function(main, route) {</code>
-	<code></code>
-	<code>var section = route[1];</code>
-	<code></code>
-	<code>this.transitionGraphs(section);</code>
-	<code></code>
-	<code>}, this);</code>
-	<code></code>
-	<code>return this;</code>
-	<code>},</code>
-	<code></code>
-	<code>renderGraphs: function() {</code>
-	<code>var type = this.data['graph-type'];</code>
-	<code>var subSections = this.data['sub-sections'];</code>
-	<code>var self = this;</code>
-	<code></code>
-	<code>this.graphs = [];</code>
-	<code>this.legendViews = [];</code>
-	<code></code>
-	<code>if (!this.visuals[type]) return;</code>
-	<code></code>
-	<code>var graph = new this.visuals[type]({</code>
-	<code>data: this.data</code>
-	<code>});</code>
-	<code></code>
-	<code>this.graphs.push(graph);</code>
-	<code></code>
-	<code>this.$visualContainer.html(graph.el);</code>
-	<code></code>
-	<code>if (subSections) {...</code>
-	<code>}</code>
-	<code></code>
-	<code>this.addControls();</code>
-	<code>},</code>
-	<code></code>
-	<code>addEvents: function() {...</code>
-	<code>},</code>
-	<code></code>
-	<code>onResize: function(e) {...</code>
-	<code>},</code>
-	<code></code>
-	<code>updateGraphs: function() {...</code>
-	<code>},</code>
-	<code></code>
-	<code>addControls: function() {...</code>
-	<code>},</code>
-	<code></code>
-	<code>doExport: function(e){...</code>
-	<code>},</code>
-	<code></code>
-	<code>onControlChange: function(e) {...</code>
-	<code>},</code>
-	<code></code>
-	<code>transitionGraphs: function(section) {...</code>
-	<code>},</code>
-	<code></code>
-	<code>isShowControls: function() {...</code>
-	<code>},</code>
-	<code></code>
-	<code>remove: function() {...</code>
-	<code>}</code>
-	<code></code>
-	<code>});</code>
-	<code></code>
-	<code>});</code>
-</pre>
+<div class="scroll">
+	<pre>
+		<code>
+			define([
+			  'globals',
+			  'views/views.master',
+			  'modules/bar-graph/modules.bar-graph.index',
+			  'modules/curved-line-graph/modules.curved-line-graph.index',
+			  'modules/tab-bar/modules.tab-bar.index',
+			  'modules/selector/modules.selector.index',
+			  'modules/legend/modules.legend.index',
+			  'views/views.table',
+			  'modules/info/modules.info.index',
+			  'text!templates/section.html',
+			], function(Globals, Master, BarGraph, CurvedLineGraph, TabBar, Selector, Legend, TableView, Info, template) {
+			  return Master.extend({
+			    templates: {...},
+			    className: 'section',
+			    events: {},
+			    messages: {...},
+			    visuals: {
+			      'bar-graph': BarGraph,
+			      'curved-line': CurvedLineGraph
+			    },
+			    controls: {...},
+			    initialize: function(options) {...},
+			    render: function() {
+			      this.renderGraphs();
+			      this.listenTo(Globals.Router, 'route', function(main, route) {
+			        var section = route[1];
+			        this.transitionGraphs(section);
+			      }, this);
+			      return this;
+			    },
+			    renderGraphs: function() {
+			      var type = this.data['graph-type'];
+			      var subSections = this.data['sub-sections'];
+			      var self = this;
+			      this.graphs = [];
+			      this.legendViews = [];
+			      if (!this.visuals[type]) return;
+			      var graph = new this.visuals[type]({
+			        data: this.data
+			      });
+			      this.graphs.push(graph);
+			      this.$visualContainer.html(graph.el);
+			      if (subSections) {...
+			      }
+			      this.addControls();
+			    },
+			    addEvents: function() {...
+			    },
+			    onResize: function(e) {...
+			    },
+			    updateGraphs: function() {...
+			    },
+			    addControls: function() {...
+			    },
+			    doExport: function(e){...
+			    },
+			    onControlChange: function(e) {...
+			    },
+			    transitionGraphs: function(section) {...
+			    },
+			    isShowControls: function() {...
+			    },
+			    remove: function() {...
+			    }
+			  });
+
+			});
+		</code>
+	</pre>
+</div>

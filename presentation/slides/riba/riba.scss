@@ -1,0 +1,24 @@
+.riba{
+
+	h1{
+		margin-bottom: 10px;
+	}
+	
+	.scroll {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+	}
+	
+
+  	&-views-diagram{
+    
+	    img{
+	      width: 90%;
+	      margin: 0 5%;
+	    }
+	
+  }
+
+}
