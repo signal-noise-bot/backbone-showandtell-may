@@ -28,7 +28,6 @@
 	<section class="slide bbpa-stacked-bars-intro"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-stacked-bars-intro.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-markup"><div><?php include('slides/bbpa/bbpa-stacked-bars-markup.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-markup-2"><div><?php include('slides/bbpa/bbpa-stacked-bars-markup-2.html'); ?></div></section>
-	<section class="slide bbpa-data-format"><div><?php include('slides/bbpa/bbpa-data-format.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-module"><div><?php include('slides/bbpa/bbpa-stacked-bars-module.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-example"><div><?php include('slides/bbpa/bbpa-stacked-bars-example.html'); ?></div></section>
 	<section class="slide bbpa-stacked-bars-customisability"><div><?php include('slides/bbpa/bbpa-stacked-bars-customisability.html'); ?></div></section>
