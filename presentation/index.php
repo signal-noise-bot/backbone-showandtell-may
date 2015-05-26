@@ -37,13 +37,13 @@
 	<section class="slide bbpa-donut-svg-syntax-1"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-1.html'); ?></div></section>
 	<section class="slide bbpa-donut-svg-syntax-2"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-2.html'); ?></div></section>
 	<section class="slide bbpa-donut-svg-syntax-3"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-3.html'); ?></div></section>
-	<section class="slide bbpa-donut-svg-syntax-4"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-4.html'); ?></div></section>
 	<section class="slide bbpa-donut-svg-syntax-6"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-6.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-1"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-helper-1.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-2"><div><?php include('slides/bbpa/bbpa-donut-helper-2.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-4"><div><?php include('slides/bbpa/bbpa-donut-helper-4.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-3"><div><?php include('slides/bbpa/bbpa-donut-helper-3.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-5"><div><?php include('slides/bbpa/bbpa-donut-helper-5.html'); ?></div></section>
+	<section class="slide bbpa-donut-svg-syntax-4"><div class="vertical-align-parent"><?php include('slides/bbpa/bbpa-donut-svg-syntax-4.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-example"><div><?php include('slides/bbpa/bbpa-donut-helper-example-1.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-example helper-large"><div><?php include('slides/bbpa/bbpa-donut-helper-example-2.html'); ?></div></section>
 	<section class="slide bbpa-donut-helper-example helper-whole"><div><?php include('slides/bbpa/bbpa-donut-helper-example-3.html'); ?></div></section>
